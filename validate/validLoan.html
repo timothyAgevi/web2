@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Functions in javascript</title>
+    <script type="text/javascript">
+     function sum()
+     {
+       validate();
+       var p,r,t,Amount;
+       p=parseFloat(frm1.txtPrinc.value);
+       t=parseFloat(frm1.txtYear.value);
+       r=parseFloat(frm1.txtRate.value);
+       Amount=p*(Math.pow(1+r/100,t));
+
+       frm1.txtAmount.value=Amount;
+     }
+
+     function validate()
+     {
+       p=frm1.txtPrinc.value;
+       t=frm1.txtYear.value;
+       r=frm1.txtRate.value;
+       
+       if(p=="")
+        {
+          alert("The value of the principle must be enetered");
+          frm1.txtPrinc.focus();
+          return false;
+        }
+       
+        else if(t=="")
+        {
+          alert("The value of the time must be enetered");
+          frm1.txtYear.focus();
+          return false;
+        }
+
+        else if(r=="")
+        {
+          alert("The value of the rate must be enetered");
+          frm1.txtRate.focus();
+          return false;
+        }
+        else
+         return true;
+
+     }
+    </script>
+
+  </head>
