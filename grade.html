@@ -8,3 +8,114 @@ AVERAGE MARKS    GRADE
 50- 59           C
 40- 49           D
  0- 39           E -->
+
+ <html>
+  <head>
+     <title>Adding any two numbers</title>
+
+  
+
+  <script type="text/javascript">
+    function grading()
+    {
+     
+
+      mk1=parseInt(myform.txtWeb.value);
+      mk2=parseInt(myform.txtAdv.value);
+      mk3=parseInt(myform.txtAnim.value);
+      mk4=parseInt(myform.txtSoft.value);
+  
+      total=mk1+mk2+mk3+mk4;
+      average=total/4;
+
+      avg=Math.round(average);
+
+      myform.txtTotal.value=total;
+      myform.txtAvg.value=avg;
+
+      if(avg>=70 && avg<=100)
+         grade='A';
+      
+      else if(avg>=60 && avg<70)
+         grade='B';
+
+      else if(avg>=50 && avg<60)
+         grade='C';
+
+      else if(avg>=40 && avg<50)
+         grade='D';
+      else
+         grade='E';
+   
+        myform.txtGrd.value=grade;
+    
+      
+    }
+  
+  </script>
+  
+  </head>
+
+<body>
+
+
+
+<form name="myform">
+   <table>
+   
+      <tr>
+         <td>ICS 2207: WEB APPLICATION II </td>
+         <td><input type="number" name="txtWeb" required="required">
+       
+      </tr>
+
+      <tr>
+         <td>BIT 2203: ADVANCED PROGRAMMING</td>
+         <td><input type="number" name="txtAdv" required="required">
+       
+      </tr>
+    
+      <tr>
+         <td>BIT 2303: COMPUTER ANIMATION </td>
+         <td><input type="number" name="txtAnim" required="required">
+       
+      </tr>
+
+      <tr>
+         <td>BIT 2321: SOFTWARE ENGINEERING</td>
+         <td><input type="number" name="txtSoft" required="required">
+       
+      </tr>
+
+      <tr>
+         <td>TOTAL MARKS: </td>
+         <td><input type="number" name="txtTotal">
+       
+      </tr>
+
+
+      <tr>
+         <td>AVERAGE MARKS: </td>
+         <td><input type="number" name="txtAvg">
+       
+      </tr>
+
+      <tr>
+         <td>GRADE: </td>
+         <td><input type="text" name="txtGrd"></td>
+       
+      </tr>
+
+
+     <tr>
+         <td><input type="button" value="CLICK TO GRADE" onclick="grading()"> </td>
+         
+      </tr>
+
+   </table>
+<form>
+
+
+</body>
+
+</html>
