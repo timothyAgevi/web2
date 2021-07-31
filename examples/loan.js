@@ -10,5 +10,8 @@ m_payment = (p*(r *Math.pow(1+r,n)))/(Math.pow(1+r,n)-1)
 console.log(m_payment)
 
 // a i)second method for calculating mPayments
+ // formula = (p * r)/(1 - Math.pow(1+r,-n))
 
 // b ) total amount of money that will have to repay
+mPayment =(p * r)/(1 - Math.pow(1+r,-n))
+console.log(mPayment)
