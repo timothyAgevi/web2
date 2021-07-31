@@ -11,8 +11,14 @@ p=1,000,000
 r = 5
 n =12
 a= p * (Math.pow(1+r,n))
+console.log(a)
 
 
 // Plan 2: 
 // The bank gives you a 12% interest rate and compounds the interest 
 // every 2 months.
+var n1,a1,r1;
+n1= 6
+r1 = 0.12
+a1 =p * (Math.pow(1+r1,n1))
+console.log(a1)
