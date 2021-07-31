@@ -6,3 +6,7 @@
 // Plan 1: 	
 // The bank gives you a 6% interest rate and compounds the interest 
 // each month.
+
+// Plan 2: 
+// The bank gives you a 12% interest rate and compounds the interest 
+// every 2 months.
