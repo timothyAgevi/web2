@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Functions in javascript</title>
+    <script type="text/javascript">
+     function sum()
+     {
+       var p,r,t,Amount;
+       p=parseFloat(frm.txtPrinc.value);
+       t=parseFloat(frm.txtYear.value);
+       r=parseFloat(frm.txtRate.value);
+       Amount=p*(Math.pow(1+r/100,t));
+
+       frm.txtAmount.value=Amount;
+     }
+    </script>
+
+  </head>
+<body>
+    <h3><u>LOAN CALCULATOR</u></h3>
+    <form name="frm">
+     <table>
+       <tr>
+        <td>Principle amount (Kshs.):</td>
+        <td><input type="text" name="txtPrinc"></td>
+       </tr>
+
+       <tr>
+        <td>Term (years):</td>
+        <td><input type="text" name="txtYear"></td>
+       </tr>
+
+      <tr>
+        <td>Rate (%):</td>
+        <td><input type="text" name="txtRate"></td>
+       </tr>
+ 
+      <tr>
+        <td><input type="button" value="Calculate" Onclick="sum();"></td>
+        <td><input type="text" name="txtAmount" ></td>
+       </tr>
+     </table>
+    </form>
+</body>
+</html>
