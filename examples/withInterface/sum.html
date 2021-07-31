@@ -1,1 +1,38 @@
 <!-- functiony that sum two numbers -->
+<html>
+  <head>
+    <title>Functions in javascript</title>
+    <script type="text/javascript">
+     function sum()
+     {
+       var num1,num2,result;
+       num1=parseInt(frm.txtNum1.value);
+       num2=parseInt(frm.txtNum2.value);
+       result=num1+num2;
+
+       frm.txtResult.value=result;
+     }
+    </script>
+
+  </head>
+<body>
+    <form name="frm">
+     <table>
+       <tr>
+        <td>Enter the first number:</td>
+        <td><input type="text" name="txtNum1"></td>
+       </tr>
+
+       <tr>
+        <td>Enter the second number:</td>
+        <td><input type="text" name="txtNum2"></td>
+       </tr>
+ 
+      <tr>
+        <td><input type="button" value="Calculate" Onclick="sum();"></td>
+        <td><input type="text" name="txtResult" ></td>
+       </tr>
+     </table>
+    </form>
+</body>
+</html>
