@@ -8,3 +8,4 @@ var r =0.05/12
 n = 12 *30
 m_payment = (p*(r *Math.pow(1+r,n)))/(Math.pow(1+r,n)-1)
 console.log(m_payment)
+// b ) total amount of money that will have to repay
