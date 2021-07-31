@@ -22,3 +22,16 @@ n1= 6
 r1 = 0.12
 a1 =p * (Math.pow(1+r1,n1))
 console.log(a1)
+
+if(a>a1)
+ {
+  console.log("Bank giving 6% interest compounded"); 
+  console.log(" each month is the best plan: Kshs. "+a+"<br>");
+
+ }
+else
+{
+  console.log("Bank giving 12% interest compounded"); 
+  console.log(" every 2 months is the best plan: Kshs. "+a1+"<br>");
+
+ }
