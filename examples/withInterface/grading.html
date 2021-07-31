@@ -9,9 +9,7 @@ AVERAGE MARKS    GRADE
 40- 49           D
  0- 39           E -->
 <html>
-    <body>
-        
-    </body>
+    
     <head>
  <script type="text/javascript">
     function grading()
@@ -52,4 +50,60 @@ AVERAGE MARKS    GRADE
 
   </script>
   </head>
+  <body>
+    <form name="myform">
+        <table>
+        
+           <tr>
+              <td>ICS 2207: WEB APPLICATION II </td>
+              <td><input type="number" name="txtWeb" required="required">
+            
+           </tr>
+     
+           <tr>
+              <td>BIT 2203: ADVANCED PROGRAMMING</td>
+              <td><input type="number" name="txtAdv" required="required">
+            
+           </tr>
+         
+           <tr>
+              <td>BIT 2303: COMPUTER ANIMATION </td>
+              <td><input type="number" name="txtAnim" required="required">
+            
+           </tr>
+     
+           <tr>
+              <td>BIT 2321: SOFTWARE ENGINEERING</td>
+              <td><input type="number" name="txtSoft" required="required">
+            
+           </tr>
+     
+           <tr>
+              <td>TOTAL MARKS: </td>
+              <td><input type="number" name="txtTotal">
+            
+           </tr>
+     
+     
+           <tr>
+              <td>AVERAGE MARKS: </td>
+              <td><input type="number" name="txtAvg">
+            
+           </tr>
+     
+           <tr>
+              <td>GRADE: </td>
+              <td><input type="text" name="txtGrd"></td>
+            
+           </tr>
+     
+     
+          <tr>
+              <td><input type="button" value="CLICK TO GRADE" onclick="grading()"> </td>
+              
+           </tr>
+     
+        </table>
+     <form>    
+</body>
   </html>
