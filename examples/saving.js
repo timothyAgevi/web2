@@ -6,6 +6,12 @@
 // Plan 1: 	
 // The bank gives you a 6% interest rate and compounds the interest 
 // each month.
+var a,p,r,n;
+p=1,000,000
+r = 5
+n =12
+a= p * (Math.pow(1+r,n))
+
 
 // Plan 2: 
 // The bank gives you a 12% interest rate and compounds the interest 
