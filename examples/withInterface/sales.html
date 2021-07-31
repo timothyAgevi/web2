@@ -31,10 +31,11 @@ of a salesmen and compute the net income -->
                 else if(sales =>50000){
                     comm = parseInt(sales*0.12)
                 }
+                var gross =parseInt(allowance + comm)
                 if(gross >=10000){
                     tax= parseInt(gross *0.1) 
                 }
-                var gross =parseInt(allowance + comm) 
+                 
                 net_income =(gross - tax)
                 // myform.txtNetIncome.value =(net_income)
                 // document.getvalueById('txtNetIncome')=net_income   
