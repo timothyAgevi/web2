@@ -10,6 +10,78 @@ From 50,000	                        12
 Tax: 10% of income of at least 10,000
 Net Income = fixed allowance + commission \96 Tax
 
+
+
 Required:
 Write a program to input the sales of a salesman and 
 computes the net income of each                       -->
+
+<html>
+<head>
+<title>Javascript</title>
+</head>
+
+<body>
+<script type="text/javascript">
+
+var FullName,EmployeeNumber,FIXED_ALLOWANCE,tax,commission,net,dept,gross;
+FIXED_ALLOWANCE=10000;
+
+
+FullName=prompt("Enter the fullname:");
+EmployeeNumber=prompt("Enter the employee number");
+dept=prompt("Enter the department");
+sales=prompt("Enter the sales amount");
+
+if(sales>=50000)
+  {
+   commission=12/100*sales;
+
+  }
+
+else if(sales>=20000 && sales<50000)
+  {
+   commission=9/100*sales;
+  }
+
+else if(sales>=10000 && sales<20000)
+  {
+   commission=7/100*sales;
+  }
+
+else 
+  {
+   commission=0;
+  }
+
+gross=commission+FIXED_ALLOWANCE;
+
+if(gross>=10000)
+  {
+    tax=10/100*gross;
+  }
+else
+  {
+    tax=0;
+
+  }
+
+net=gross-tax;
+
+document.write("<u><b>PAY SLIP FOR 2013</b></u><br>");
+document.write("Name: "+FullName+"<br>");
+document.write("Employee Number: "+EmployeeNumber+"<br>");
+document.write("Department: "+dept+"<br>");
+document.write("Total sales amount: Kshs. "+sales+"<br>");
+document.write("Commission earned: Kshs. "+commission+"<br>");
+document.write("Fixed Allowance : Kshs "+FIXED_ALLOWANCE+"<br>");
+document.write("Gross salary : Kshs "+gross+"<br>");
+document.write("Tax amount : Kshs "+tax+"<br>");
+document.write("Net income : Kshs "+net+"<br>");
+var d =new Date();
+document.write("Prepared on: "+d+"<br>")
+</script>
+
+</body>
+
+</html>
