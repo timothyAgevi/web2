@@ -20,3 +20,5 @@ var tAmount = mPayment * n
 console.log(tAmount) 
 // c)Calculate the tyotal amount of intrest I will pay 
 // I = total amount - Principal
+var i = tAmount -p
+console.log(i)
