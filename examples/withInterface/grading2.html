@@ -2,3 +2,40 @@
 BASED ON THREE SUBJECTS A STUDENT HAS DONE IN EXAMS. WRITE A
 JAVASCRIPT PROGRAM THAT WILL ACCEPT THE THREE MARKS AND 
 GRADE THE STUDENT. -->
+
+<html>
+<head>
+   <title>Introduction control structures</title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+var mk1,mk2,mk3,avg,total;
+mk1=parseInt(prompt("Enter marks for English: "));
+mk2=parseInt(prompt("Enter marks for Computer;  "));
+mk3=parseInt(prompt("Enter marks for History: "));
+
+total = mk1+mk2+mk3;
+avg = total/3;
+
+document.write("<u><b>TRANSCRIPT FOR JAN-APRIL SEMESTER 2013</b></u><br>");
+document.write("English: "+mk1+"<br>");
+document.write("Computer: "+mk2+"<br>");
+document.write("History: "+mk3+"<br>");
+document.write("Total: "+total+"<br>");
+document.write("Average: "+avg+"<br>");
+
+if(avg>=50)
+ {
+  document.write("Verdict: Pass!! Proceed to HS<br>");
+
+ }
+else
+ {
+  document.write("Verdict: Fail!! Repeat or go VP<br>");
+
+ }
+</script>
+</body>
+</html>
