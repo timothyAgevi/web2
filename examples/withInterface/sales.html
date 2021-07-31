@@ -17,27 +17,28 @@ of a salesmen and compute the net income -->
         <script>
             function cal(){
                 var sales,allowance,comm,gross,net_income,tax;
-                var allowance =5000
+                var allowance = parseInt(5000)
                 
-                var sales = myform.txtSales.value
+                var sales = parseInt(myform.txtSales.value)
                 
                 
                 if (sales>=10000 && sales <2000){
-                    comm= sales * 0.07
+                    comm=parseInt(sales * 0.07) 
                 }
                 else if(sales>=20000 && sales <50000 ){
-                    comm= sales * 0.09
+                    comm= parseInt(sales * 0.09)
                 }
                 else if(sales =>50000){
-                    comm = sales*0.12
+                    comm = parseInt(sales*0.12)
                 }
                 if(gross >=10000){
-                    tax= gross *0.1
+                    tax= parseInt(gross *0.1) 
                 }
-                var gross = allowance + comm
-                net_income =gross - tax
-                myform.txtNetIncome.value =net_income
+                var gross =parseInt(allowance + comm) 
+                net_income =(gross - tax)
+                // myform.txtNetIncome.value =(net_income)
                 // document.getvalueById('txtNetIncome')=net_income   
+// behaving funny
             }
         </script>
     </head>
@@ -52,7 +53,7 @@ of a salesmen and compute the net income -->
         <td><input type='button'value ='Calculate'onClick="cal();">
               
             </td>
-            <td><input type = 'number' name= 'txtNetIncome'></td>
+            <td><input type = 'text' name= 'txtNetIncome'></td>
         </tr>   
           </table> 
        </form> 
