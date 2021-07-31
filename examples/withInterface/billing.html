@@ -26,3 +26,62 @@ The program will then print out the bill details.
 ?	Current meter reading
 ?	Consumption
 ?	Bill to pay -->
+
+<html>
+<head>
+<title>Javascript</title>
+</head>
+
+<body>
+<script type="text/javascript">
+
+var FullName,tel,address,bill,units_cons,pReading,cReading;
+
+FullName=prompt("Enter the fullname:");
+address=prompt("Enter the address");
+cReading=prompt("Enter the current reading:");
+pReading=prompt("Enter the previous reading");
+tel=prompt("Enter the telephone number:");
+
+units_cons=cReading-pReading;
+
+if(units_cons>350)
+  {
+   bill=units_cons*1.65;
+
+  }
+
+else if(units_cons>200 && units_cons<=350)
+  {
+   bill=units_cons*1.90;
+  }
+
+else if(units_cons>100 && units_cons<=200)
+  {
+   bill=units_cons*2.25;
+  }
+
+else if(units_cons>0 && units_cons<=100)
+  {
+   bill=units_cons*2.50;
+  }
+
+
+else 
+  {
+   bill=0;
+  }
+document.write("<u><b>BILL FOR JAN 2013</b></u><br>");
+document.write("Name: "+FullName+"<br>");
+document.write("Address: "+address+"<br>");
+document.write("Telephone: "+tel+"<br>");
+document.write("Previous Reading: "+pReading+"<br>");
+document.write("Current Reading "+cReading+"<br>");
+document.write("Units Consumed: "+units_cons+"<br>");
+document.write("Bill to pay : Kshs "+bill+"<br>");
+
+</script>
+
+</body>
+
+</html
