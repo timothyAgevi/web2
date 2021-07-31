@@ -18,3 +18,4 @@ console.log(m_payment)
 // formula : tAmount = mPayment * n umber of months
 var tAmount = mPayment * n
 console.log(tAmount) 
+// c)Calculate the tyotal amount of intrest I will pay 
