@@ -15,13 +15,13 @@ of a salesmen and compute the net income -->
 <html>
     <head>
         <script>
-            function netIncome(){
+            function cal(){
                 var sales,allowance,comm,gross,net_income,tax;
                 var allowance =5000
-                var gross = allowance +comm
-                var sales = myform.txtSales.value()
-                net_income =gross - tax
-                myform.txtNetIncome.value =net_income
+                
+                var sales = myform.txtSales.value
+                
+                
                 if (sales>=10000 && sales <2000){
                     comm= sales * 0.07
                 }
@@ -31,20 +31,29 @@ of a salesmen and compute the net income -->
                 else if(sales =>50000){
                     comm = sales*0.12
                 }
-                
-                
-
-                
+                if(gross >=10000){
+                    tax= gross *0.1
+                }
+                var gross = allowance + comm
+                net_income =gross - tax
+                myform.txtNetIncome.value =net_income
+                // document.getvalueById('txtNetIncome')=net_income   
             }
         </script>
     </head>
     <body>
-       <form action="">
+       <form name ="myform">
           <table>
            <tr>
                <td>Enter Sales</td>
-               <td input type='number'name = 'txtSales'></td>
-           </tr>   
+               <td><input type="text" name = "txtSales"></td>
+           </tr> 
+           <tr>
+        <td><input type='button'value ='Calculate'onClick="cal();">
+              
+            </td>
+            <td><input type = 'number' name= 'txtNetIncome'></td>
+        </tr>   
           </table> 
        </form> 
     </body>
