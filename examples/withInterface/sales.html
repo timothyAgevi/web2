@@ -16,7 +16,7 @@ of a salesmen and compute the net income -->
     <head>
         <script>
             function cal(){
-                var sales,allowance,comm,gross,net_income,tax;
+                var sales,allowance,comm,gross,tax,net_income;
                 var allowance = parseInt(5000)
                 
                 var sales = parseInt(myform.txtSales.value)
@@ -37,9 +37,8 @@ of a salesmen and compute the net income -->
                 }
                  
                 net_income =(gross - tax)
-                // myform.txtNetIncome.value =(net_income)
-                // document.getvalueById('txtNetIncome')=net_income   
-// behaving funny
+                myform.txtNetIncome.value =net_income
+ 
             }
         </script>
     </head>

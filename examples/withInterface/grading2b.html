@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Document</title>
+
+<script>
+    function calculate(){
+var mk1,mk2,total,avg;
+mk1= parseInt(myform.txtMk1.value)
+mk2= parseInt(myform.txtMk2.value)
+
+total =parseInt(mk1+ mk2) ;
+avg = total / 2 
+average = Math.round(avg)
+myform.txtTotal.value = total;
+myform.txtAvg.value = average;
+
+// myform.txtAvg = average;
+    }
+</script>
+
+
+</head>
+<body>
+<form name ="myform">
+    <table>
+<tr>
+    <td>Enter Mark 1</td>
+    <td><input type ="text"name="txtMk1" ></td>
+</tr>
+
+<tr>
+    <td>Enter Mark 2</td>
+    <td><input type ="text"name="txtMk2" ></td>
+</tr>
+<tr>
+    <td>Total</td>
+<td><input type ="text"name="txtTotal" ></td>
+</tr>
+<tr>
+    <td>Average</td>
+<td><input type ="text"name="txtAvg" ></td>
+</tr>
+<tr>
+ <td><input type ="button" value = "calculate" onClick ="calculate();" ></td>
+ 
+</tr>
+        
+    </table>
+</form>    
+</body>
+</html>
