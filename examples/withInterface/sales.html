@@ -16,8 +16,23 @@ of a salesmen and compute the net income -->
     <head>
         <script>
             function netIncome(){
-                var sales,comm,net_income,tax;
+                var sales,allowance,comm,gross,net_income,tax;
+                var allowance =5000
+                var gross = allowance +comm
+                var sales = myform.txtSales.value()
+                net_income =gross - tax
+                myform.txtNetIncome.value =net_income
+                if (sales>=10000 && sales <2000){
+                    comm= sales * 0.07
+                }
+                else if(sales>=20000 && sales <50000 ){
+                    comm= sales * 0.09
+                }
+                else if(sales =>50000){
+                    comm = sales*0.12
+                }
                 
+
                 
             }
         </script>
