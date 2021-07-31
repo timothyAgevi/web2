@@ -11,7 +11,10 @@ console.log(m_payment)
 
 // a i)second method for calculating mPayments
  // formula = (p * r)/(1 - Math.pow(1+r,-n))
+ mPayment =(p * r)/(1 - Math.pow(1+r,-n))
+ console.log(mPayment)
 
 // b ) total amount of money that will have to repay
-mPayment =(p * r)/(1 - Math.pow(1+r,-n))
-console.log(mPayment)
+// formula : tAmount = mPayment * n umber of months
+var tAmount = mPayment * n
+console.log(tAmount) 
