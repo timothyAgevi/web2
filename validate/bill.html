@@ -92,6 +92,50 @@ The program will then print out the bill details.
             </script>
         </head>
         <body>
-            <form  name ="frm" action=""></form>
+            <form  name ="frm" action="">
+                <table border="1">
+                    <tr><th>NAIROBI WATER BILLING SYSTEM</th></tr>
+                    <tr><td>
+                    <table border="0">
+                       
+                       <tr>
+                        <td><b>First name:</b> </td>
+                        <td><input type="text" name ="txtFname"></td>
+                    
+                        <td><b>Last name:</b> </td>
+                        <td><input type="text" name ="txtLname"></td>
+                       </tr>
+                       
+                        <tr>
+                        <td><b>Telephone Number:</b></td>
+                        <td><input type="text" name ="txtTel"></td>
+                    
+                        <td><b>Address:</b></td>
+                        <td><input type="text" name ="txtAddress"></td>
+                       </tr>
+                    
+                        <tr>
+                        <td><b>Previous meter reading:</b></td>
+                        <td><input type="text" name ="txtPreading"></td>
+                    
+                        <td><b>Current meter reading:</b></td>
+                        <td><input type="text" name ="txtCreading"></td>
+                       </tr>
+                        
+                        <tr>
+                        <td><b>Consumption:</b></td>
+                        <td><input type="text" name ="txtCons"></td>
+                    
+                        <td><b>Bill to pay (Kshs):</b></td>
+                        <td><input type="text" name ="txtBill"></td>
+                       </tr>
+                    
+                        <tr>
+                        <td><input type="button" value="Calculate" onclick="calculate();"></td>
+                       </tr>
+                    
+                       </table>
+                      
+            </form>
         </body>
     </html>
