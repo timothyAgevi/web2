@@ -20,7 +20,25 @@ The program will then print out the bill details.
     <html>
         <head>
             <script>
-                
+              function validate()
+  {
+      p=frm.txtPreading.value;
+      c=frm.txtCreading.value;
+      
+      if(p=="")
+        {
+         alert("Must enter the previous reading");
+         document.frm.txtPreading.focus();
+         return false;
+        }
+     else if(c=="")
+       {
+         alert("Must enter the current reading");
+         document.frm.txtCreading.focus();
+         return false;
+       }
+     return true;	
+  }  
             </script>
         </head>
     </html>
