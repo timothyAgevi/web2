@@ -39,6 +39,56 @@ The program will then print out the bill details.
        }
      return true;	
   }  
+  function calculate()
+  {
+    var Preading,Creading,bill,cons;
+    validate();
+    Preading=parseFloat(frm.txtPreading.value);
+    Creading=parseFloat(frm.txtCreading.value);
+    if(Preading>Creading)
+     {
+        alert("Previous reading can't be be greater than the current reading");
+        document.frm.txtPreading.focus();
+        frm.txtPreading.value="";
+        frm.txtCreading.value="";
+        frm.txtCons.value=0;
+        frm.txtBill.value=0;
+        return false;	
+     }
+     
+   else
+    {
+       cons=Creading-Preading;
+
+       if(cons>350)
+       {
+         bill=3.65*cons;
+       }
+
+       else if(cons>200 && cons<=350)
+       {
+        bill=2.90*cons;
+       }
+
+       else if(cons>100 && cons<=200)
+       {
+        bill=2.50*cons;
+       }
+
+       else if(cons>0 && cons<=100)
+       {
+        bill=1.50*cons;
+       }
+
+       else
+       {
+         bill=0;
+       }
+   }
+  frm.txtCons.value=cons;
+  frm.txtBill.value=bill;
+ }
+
             </script>
         </head>
     </html>
